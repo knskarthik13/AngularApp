@@ -27,7 +27,7 @@ export class ProductComponent  {
       
       {
       productTitle:"Canon M50",
-      description:"Canon M50 Mark II 15-45mm f3.5-6.3 is STM",
+      description:"Canon M50 Mark II 15-45mm f3.5-6.3 is STM (Real-Time Eye Auto Focus, Eye AF, Tiltable LCD, Low Light Camera) - Black",
       productImage:"https://m.media-amazon.com/images/I/51bHhi0DMiL._AC_UL480_FMwebp_QL65_.jpg"
       },
       {
@@ -37,7 +37,7 @@ export class ProductComponent  {
         },
         {
         productTitle:"Sony Alpha ILCE-7M3K",
-        description:"Sony Alpha ILCE-7M3K Full-Frame 24.2MP Mirrorless Camera with 28-70mm Zoom Lens (4K Full Frame, Real-Time Eye Auto Focus, Tiltable LCD, Low Light Camera) - Black",
+        description:"Sony Alpha ILCE-7M3K Full-Frame 24.2MP Mirrorless Camera with 28-70mm Zoom Lens(4K Full Frame,Real-Time Eye Auto Focus,Low Light Camera) Black",
         productImage:"https://m.media-amazon.com/images/I/71CWotTQT4L._AC_UL480_FMwebp_QL65_.jpg"
         }
   ];
