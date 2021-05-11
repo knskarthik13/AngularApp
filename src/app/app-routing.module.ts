@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CamerasComponent } from './cameras/cameras.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductComponent } from './product/product.component';
 import { RegisterComponent } from './register/register.component';
+import { TelevisionsComponent } from './televisions/televisions.component';
 
 const routes: Routes = [
   {
@@ -25,12 +29,34 @@ const routes: Routes = [
   },
   {
     path:'product',
-    component:ProductComponent
+    component:ProductComponent,
+    children:[
+    {
+      path:'mobiles',
+      component:MobilesComponent
+    },
+    {
+      path:'cameras',
+      component:CamerasComponent
+    },
+    {
+      path:'televisions',
+      component:TelevisionsComponent
+    },
+    {
+      path:'',
+      redirectTo:'/product/mobiles',
+      pathMatch:'full'
+    }]
   },
   {
     path:'',
     redirectTo:'/home',
     pathMatch:'full'
+  },
+  {
+    path:'**',
+    component:PagenotfoundComponent
   }
 ];
 
@@ -39,3 +65,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
