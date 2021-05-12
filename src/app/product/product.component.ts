@@ -6,6 +6,5 @@ import { Product} from '../models/product.model'
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent  {
-
-
+  
 }
