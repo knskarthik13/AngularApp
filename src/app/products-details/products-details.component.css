@@ -1,3 +1,9 @@
 .card{
     width: 18rem;
 }
+button:active{
+    box-shadow: none;
+}
+button:focus{
+    box-shadow: none;
+}

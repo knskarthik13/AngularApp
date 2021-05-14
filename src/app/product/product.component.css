@@ -1,3 +1,18 @@
 li{
     list-style: none;
+    
+}
+li a{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.active.nav-link{
+    background-color: blueviolet;
+    color:#ffffff;
+    box-shadow: 3px 3px 3px #000000;
 }
