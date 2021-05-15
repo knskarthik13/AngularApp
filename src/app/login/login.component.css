@@ -4,6 +4,9 @@ input:active{
 input:hover{
     box-shadow: none;
 }
+input:empty{
+    box-shadow: none;
+}
 .btn:active{
     box-shadow: none;
 }
