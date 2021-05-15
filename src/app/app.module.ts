@@ -28,7 +28,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     MobilesComponent,
     CamerasComponent,
     TelevisionsComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
