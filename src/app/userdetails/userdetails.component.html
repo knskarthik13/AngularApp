@@ -1,0 +1,16 @@
+<div class="card bg-dark mb-3 w-75 d-block mt-5 mx-auto">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src={{userObj.profilePic}} class="w-100 card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title display-4 pb-3">Name : {{userObj.name}}</h5>
+          <p class="card-text fs-4">Email : {{userObj.email}}</p>
+          <p class="card-text fs-4">Address : {{userObj.address.street}}, {{userObj.address.suite}}, {{userObj.address.city}}, {{userObj.address.zipcode}}</p>
+          <p class="card-text fs-4">Profession : {{userObj.profession}}</p>
+          <p class="card-text fs-4">Phone no : {{userObj.mobileno}}</p>
+          </div>
+      </div>
+    </div>
+  </div>

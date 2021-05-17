@@ -1,0 +1,17 @@
+<div class="background">
+    <table class="table text-dark text-center">
+        <thead>
+            <tr>
+    
+                <th class="display-4">Users</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let userObj of users">
+                <td>
+                   <button class="btn btn-sm btn-warning"  (click)="onSelectId(userObj.id)"> {{userObj.id}}-{{userObj.name}}</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>

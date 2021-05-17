@@ -11,11 +11,19 @@ import { ProductComponent } from '../product/product.component';
 export class CamerasComponent implements OnInit {
 
   cameras:Product[]=[]
-  constructor(private csObj:CameradataService) { }
-
-  ngOnInit(): void {
-    this.cameras=this.csObj.getCamerasData()
+  constructor(private dsObj:CameradataService){}
+  
+  ngOnInit(){
+    this.dsObj.getCamerasData().subscribe(
+      data=>{
+        this.cameras=data;
+      },
+      err=>{
+        console.log("err is ",err)
+      }
+      )
   }
+
   productSentByChild=[];
   productCount:number=0;
 

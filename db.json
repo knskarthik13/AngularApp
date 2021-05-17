@@ -1,0 +1,237 @@
+{
+    "mobiles":[
+        {
+            "productTitle":"Samsung Galaxy M02s",
+            "description":"Samsung Galaxy M02s (Blue,4GB RAM, 64GB Storage) | 5000 mAh | Triple Camera",
+            "productImage":"https://www.sathya.in/Media/Default/Thumbs/0038/0038136-vivo-s1-pro-black8gb-ram-128gb-storage-250.jpg"
+         },
+         {
+            "productTitle":"Samsung Galaxy M12",
+            "description":"Samsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor",
+            "productImage":"https://priceintanzania.com/wp-content/uploads/2019/04/Samsung-Galaxy-A70-Price-in-Tanzania.jpg"
+         },
+         {
+            "productTitle":"Redmi Note 9 Pro",
+            "description":"Redmi Note 9 Pro (Interstellar Black, 4GB RAM, 64GB Storage)- Latest 8nm Snapdragon 720G",
+            "productImage":"https://5.imimg.com/data5/AW/IX/GLADMIN-53160395/galaxy-s-500x500.png"
+         },
+         {
+            "productTitle":"Iphone-11",
+            "description":"Iphone-11 6.1-inch (15.5 cm) Liquid Retina HD LCD display with True Tone | Dual 12MP cameras ",
+            "productImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnUpuHOI1WPovC3CUemRnhJW4_frjhQy6ow&usqp=CAU"
+         },
+         {
+            "productTitle":"OnePlus Nord 5G",
+            "description":"OnePlus Nord 5G (Blue Marble, 12GB RAM, 256GB Storage) 6.44-inch 90Hz fluid Amoled display ",
+            "productImage":"https://670354.smushcdn.com/2260778/wp-content/uploads/2021/03/AMZ101-2.jpg"
+         },
+         {
+            "productTitle":"Google Pixel 4a",
+            "description":"Google Pixel 4a 5G (Just Black, 6GB RAM, 128GB Storage) With HD Duo screen sharing",
+            "productImage":"https://m.media-amazon.com/images/I/71C0OH4WfpL._AC_UY327_FMwebp_QL65_.jpg"
+         }
+         
+  ],
+  "cameras":[
+    {
+        "productTitle":"Canon EOS 1500D",
+        "description":"Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens",
+        "productImage":"https://m.media-amazon.com/images/I/914hFeTU2-L._AC_UL480_FMwebp_QL65_.jpg"
+     },
+     {
+        "productTitle":"Canon EOS 200D ",
+        "description":"Canon EOS 200D II 24.1MP Digital SLR Camera + EF-S 18-55mm f4 is STM Lens (Black)",
+        "productImage":"https://m.media-amazon.com/images/I/81cEKnH692L._AC_UL480_FMwebp_QL65_.jpg"
+     },
+     {
+        "productTitle":"Canon PowerShot SX540HS",
+        "description":"Canon PowerShot SX540HS 20.3MP Digital Camera with 50x Optical Zoom (Black)",
+        "productImage":"https://m.media-amazon.com/images/I/71Xp-K4MMBL._AC_UL480_FMwebp_QL65_.jpg"
+     },
+     {
+        "productTitle":"Canon M50",
+        "description":"Canon M50 Mark II 15-45mm f3.5-6.3 is STM (Real-Time Eye Auto Focus, Eye AF, Tiltable LCD, Low Light Camera) - Black",
+        "productImage":"https://m.media-amazon.com/images/I/51bHhi0DMiL._AC_UL480_FMwebp_QL65_.jpg"
+     },
+     {
+        "productTitle":"Sony Alpha ILCE",
+        "description":"Sony Alpha ILCE 6000L 24.3 MP Mirrorless Digital SLR Camera with 16-50 mm (APS-C Sensor, Fast Auto Focus, Eye AF, Light Weight) - Black",
+        "productImage":"https://m.media-amazon.com/images/I/71vLVOCKD+L._AC_UL480_FMwebp_QL65_.jpg"
+     },
+     {
+        "productTitle":"Sony Alpha ILCE-7M3K",
+        "description":"Sony Alpha ILCE-7M3K Full-Frame 24.2MP Mirrorless Camera with 28-70mm Zoom Lens(4K Full Frame,Real-Time Eye Auto Focus,Low Light Camera) Black",
+        "productImage":"https://m.media-amazon.com/images/I/71CWotTQT4L._AC_UL480_FMwebp_QL65_.jpg"
+     }
+  ],
+  "televisions":[
+    {
+        "productTitle":"Mi TV L32M5-AL",
+        "description":"Mi 80 cm (32 inches) HD Ready Android Smart LED TV 4A PRO|L32M5-AL (Black)",
+        "productImage":"https://m.media-amazon.com/images/I/513lkJuezIL.jpg"
+     },
+     {
+        "productTitle":"OnePlus TV 32Y1",
+        "description":"OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black) (2020 Model)",
+        "productImage":"https://m.media-amazon.com/images/I/51sIfBeY3sL.jpg"
+     },
+     {
+        "productTitle":"Samsung TV UA32T4340AKXXL",
+        "description":"Samsung 80 cm (32 Inches) Wondertainment Series HD Ready LED Smart TV UA32T4340AKXXL",
+        "productImage":"https://m.media-amazon.com/images/I/51OmRL6TZLL.jpg"
+     },
+     {
+        "productTitle":"LG TV 32LM563BPTC",
+        "description":"LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray) (2020 Model)",
+        "productImage":"https://m.media-amazon.com/images/I/51STyIbNXuL.jpg"
+     },
+     {
+        "productTitle":"AmazonBasics TV AB32E10SS",
+        "description":"AmazonBasics 81cm (32 inches) Fire TV Edition HD Ready Smart LED TV AB32E10SS (Black)",
+        "productImage":"https://m.media-amazon.com/images/I/811j4G5MJML._AC_UL480_FMwebp_QL65_.jpg"
+     },
+     {
+        "productTitle":"Sony Bravia TV KDL-43W6603",
+        "description":"Sony Bravia 108 cm (43 inches) Full HD Smart LED TV KDL-43W6603 (Black) (2020 Model)",
+        "productImage":"https://m.media-amazon.com/images/I/81lpllAGcBL._AC_UL480_FMwebp_QL65_.jpg"
+     }
+     ],
+     "users":[
+        {
+            "id":1,
+            "email":"karthik@gmail.com",
+            "name":"Karthik",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address": {
+                "street": "Kulas Light",
+                "suite": "Apt. 556",
+                "city": "Gwenborough",
+                "zipcode": "92998-3874"
+              },
+            "profession":"Software Engineer",
+            "mobileno":9999999999
+        },
+        {
+            "id":2,
+            "name": "Leanne Graham",
+            "email": "Sincere@april.biz",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address":{
+                "street": "Victor Plains",
+                "suite": "Suite 879",
+                "city": "Wisokyburgh",
+                "zipcode": "90566-7771"
+            },
+            "profession":"Laywer",
+            "mobileno":90332994819
+        },
+        {
+            "id":3,
+            "name": "Ervin Howell",
+            "email": "Shanna@melissa.tv",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address":{
+                "street": "Douglas Extension",
+                "suite": "Suite 847",
+                "city": "McKenziehaven",
+                "zipcode": "59590-4157"
+            },
+            "profession":"Mechnical Engineer",
+            "mobileno":9669393949
+        },
+        {
+            "id":4,
+            "name": "Clementine Bauch",
+            "email": "Nathan@yesenia.net",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address":{
+                "street": "Hoeger Mall",
+                "suite": "Apt. 692",
+                "city": "South Elvis",
+                "zipcode": "53919-4257"},
+            "profession":"Doctor",
+            "mobileno":9998349109
+        },
+        {
+            "id":5,
+            "name": "Patricia Lebsack",
+            "email": "Julianne.OConner@kory.org",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address":{
+                "street": "Skiles Walks",
+                "suite": "Suite 351",
+                "city": "Roscoeview",
+                "zipcode": "33263"},
+            "profession":"Business Advisor",
+            "mobileno":9996782349
+        },
+        {
+            "id":6,
+            "name": "Chelsey Dietrich",
+            "email": "Lucio_Hettinger@annie.ca",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address":{
+                "street": "Norberto Crossing",
+                "suite": "Apt. 950",
+                "city": "South Christy",
+                "zipcode": "23505-1337"},
+            "profession":"Bank Manager",
+            "mobileno":9999123549
+        },
+        {
+            "id":7,
+            "name": "Mrs. Dennis Schulist",
+            "email": "Karley_Dach@jasper.info",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address":{
+                "street": "Rex Trail",
+                "suite": "Suite 280",
+                "city": "Howemouth",
+                "zipcode": "58804-1099"},
+            "profession":"Asst. Professor",
+            "mobileno":9999912345
+        },
+        {
+            "id":8,
+            "name": "Kurtis Weissnat",
+            "email": "Telly.Hoeger@billy.biz",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address":{
+                "street": "Dayna Park",
+                "suite": "Suite 449",
+                "city": "Bartholomebury",
+                "zipcode": "76495-3109"},
+            "profession":"Test Engineer",
+            "mobileno":9999921199
+        },
+        {
+            "id":9,
+            "name": "Nicholas Runolfsdottir V",
+            "email": "Sherwood@rosamond.me",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address":{
+                "street": "Ellsworth Summit",
+                "suite": "Suite 729",
+                "city": "Aliyaview",
+                "zipcode": "45169"
+            },
+            "profession":"Data Analyst",
+            "mobileno":9921199312
+        },
+        {
+            "id":10,
+            "name": "Glenna Reichert",
+            "email": "Chaim_McDermott@dana.io",
+            "profilePic":"https://www.pinclipart.com/picdir/middle/558-5588129_silhouette-person-clip-art-silhouette-unknown-people-png.png",
+            "address":{
+                "street": "Kattie Turnpike",
+                "suite": "Suite 198",
+                "city": "Lebsackbury",
+                "zipcode": "31428-2261"
+            },
+            "profession":"Police Officer",
+            "mobileno":9999992229
+        }
+     ]
+  
+}

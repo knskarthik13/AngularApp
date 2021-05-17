@@ -7,19 +7,22 @@ import { Product } from '../models/product.model';
   styleUrls: ['./mobiles.component.css']
 })
 export class MobilesComponent implements OnInit{
-  
+
   mobiles:Product[]=[];
-  //inject object dataservice class
-
-  constructor(private dsObj:DataService){
-
-  }
-  ngOnInit(){
-    //obj intalization logic
-    this.mobiles=this.dsObj.getMobilesData();
-
-  }
+//inject obj of DataService class
+  constructor(private dsObj:DataService){}
   
+  ngOnInit(){
+    this.dsObj.getMobilesData().subscribe(
+      data=>{
+        this.mobiles=data;
+      },
+      err=>{
+        console.log("err is ",err)
+      }
+      )
+  }
+
   productSentByChild=[];
   productCount:number=0;
 

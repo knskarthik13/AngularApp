@@ -9,6 +9,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductComponent } from './product/product.component';
 import { RegisterComponent } from './register/register.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
   {
@@ -48,6 +50,14 @@ const routes: Routes = [
       redirectTo:'/product/mobiles',
       pathMatch:'full'
     }]
+  },
+  {
+    path:'users',
+    component:UsersComponent
+  },
+  {
+    path:'users/:id',
+    component:UserdetailsComponent
   },
   {
     path:'',

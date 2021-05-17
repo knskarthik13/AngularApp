@@ -9,12 +9,19 @@ import { TelevisiondataService } from '../televisiondata.service';
 })
 export class TelevisionsComponent implements OnInit {
   televisions:Product[]=[]
-  constructor(private tsObj:TelevisiondataService) { }
-
-  ngOnInit(): void {
-    this.televisions=this.tsObj.getTelevsionsData()
-    
+  constructor(private dsObj:TelevisiondataService){}
+  
+  ngOnInit(){
+    this.dsObj.getTelevisionsData().subscribe(
+      data=>{
+        this.televisions=data;
+      },
+      err=>{
+        console.log("err is ",err)
+      }
+      )
   }
+
 
 
   productSentByChild=[];
