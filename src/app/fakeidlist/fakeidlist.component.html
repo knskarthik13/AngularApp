@@ -1,0 +1,34 @@
+<div class="container m-5 ">
+    <h5>Page : {{fakeid['page']}}</h5>
+    <h5>Per Page : {{fakeid['per_page']}}</h5>
+    <h5>Total : {{fakeid['total']}}</h5>
+    <h5>Total Pages : {{fakeid['total_pages']}}</h5>
+    <h5>Data : </h5>
+<div class="table-responsive">
+    <table class="table  table align-middle table-primary table-striped">
+        <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Year</th>
+              <th scope="col">Color</th>
+              <th scope="col">Pantone Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let usObj of fakeid['data']">
+              <td>{{usObj.id}}</td>
+              <td>{{usObj.name}}</td>
+              <td>{{usObj.year}}</td>
+              <td>{{usObj.color}}</td>
+              <td>{{usObj.pantone_value}}</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+    <h5>Support : </h5>
+    <ul>
+        <li>Url : {{fakeid['support']['url']}}</li>
+        <li>Text : {{fakeid['support']['text']}}</li>
+    </ul>
+</div>

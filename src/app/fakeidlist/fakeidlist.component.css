@@ -1,0 +1,12 @@
+li{
+    list-style-type:none;
+    color:rgb(107, 245, 255);
+}
+h5{
+    color: rgb(101, 245, 255);
+}
+.container{
+    border:2px solid rgb(185, 110, 255);
+    background-color: rgb(50, 29, 109);
+    opacity: 0.8;
+}

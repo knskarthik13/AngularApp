@@ -15,6 +15,8 @@ import { CamerasComponent } from './cameras/cameras.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TestComponent } from './test/test.component';
+import { FakeuserlistComponent } from './fakeuserlist/fakeuserlist.component';
+import { FakeidlistComponent } from './fakeidlist/fakeidlist.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { TestComponent } from './test/test.component';
     TelevisionsComponent,
     PagenotfoundComponent,
     TestComponent,
+    FakeuserlistComponent,
+    FakeidlistComponent,
   ],
   imports: [
     BrowserModule,

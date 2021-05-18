@@ -16,15 +16,5 @@ export class TestComponent implements OnInit {
 
   }
   ngOnInit(){
-   this.dsObj.getPost().subscribe
-   (
-     data=>{
-       this.post=data;
-       console.log(this.post)
-     },
-     err=>{
-       console.log("err is ",err)
-     }
-   )
   }
 }

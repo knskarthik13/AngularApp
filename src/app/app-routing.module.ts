@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CamerasComponent } from './cameras/cameras.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { FakeidlistComponent } from './fakeidlist/fakeidlist.component';
+import { FakeuserlistComponent } from './fakeuserlist/fakeuserlist.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
@@ -45,8 +47,12 @@ const routes: Routes = [
       component:TelevisionsComponent
     },
     {
-      path:'test',
-      component:TestComponent
+      path:'fakeuser',
+      component:FakeuserlistComponent
+    },
+    {
+      path:'fakeid',
+      component:FakeidlistComponent
     },
     {
       path:'',

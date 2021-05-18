@@ -1,0 +1,48 @@
+<div class="table-responsive">
+<table class="table  table align-middle table-primary table-striped">
+    <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Username</th>
+          <th scope="col">Address</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Website</th>
+          <th scope="col">Company</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usObj of fakeuser">
+          <td>{{usObj.id}}</td>
+          <td>{{usObj.name}}</td>
+          <td>{{usObj.email}}</td>
+          <td>{{usObj.username}}</td>
+          <td>
+              <ul>
+                  <li>Street:{{usObj.address.street}}</li>
+                  <li>Suite:{{usObj.address.suite}}</li>
+                  <li>City:{{usObj.address.city}}</li>
+                  <li>Zipcode:{{usObj.address.zipcode}}</li>
+                  <li>Geo:
+                      <ul>
+                          <li>Lat:{{usObj.address.geo.lat}}</li>
+                          <li>Lng:{{usObj.address.geo.lng}}</li>
+                      </ul>
+                  </li>
+            </ul>
+        </td>
+                  <td>{{usObj.phone}}</td>
+                  <td>{{usObj.website}}</td>
+                  <td>
+                      <ul>
+                          <li>Name:{{usObj.company.name}}</li>
+                          <li>CatchPhrase:{{usObj.company.catchPhrase}}</li>
+                          <li>Bs:{{usObj.company.bs}}</li>
+                      </ul>
+                </td>
+          
+        </tr>
+      </tbody>
+  </table>
+</div>
