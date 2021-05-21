@@ -1,23 +1,21 @@
-<div class="container">
-    <h1 class="text-center mt-5">Login</h1>
-    <div class="row">
-        <div class="col-sm-2 col-md-3"></div>
-         <div class="col-sm-8 col-md-6">
-            <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <h1 class="text-center mt-5">Login</h1>
+
+      <div class="row text-dark">
+          <div class="col-sm-2 col-md-3"></div>
+          <div class="col-sm-8 col-md-6">
+              <form class="text-white" #ref="ngForm"  (ngSubmit)="onLogin(ref)">
+                  <div class="mb-3 text-dark">
+                      <label for="un" class="form-label">Username
+                          
+                      </label>
+                      <input type="text" class="form-control" id="un" name="username" ngModel>
                   </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="text-center mt-5">
-                <button type="submit" class="btn btn-primary">Login</button>
-                </div>
-            </form>
-         </div>
-         <div class="col-sm-2 col-md-3"></div>
-    </div>
-    
+                  <div class="mb-3 text-dark">
+                      <label for="pw" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="pw"  name="password" ngModel>
+                  </div>
+                  <button type="submit" class="btn btn-success d-block mx-auto m-4">Login</button>
+              </form>
+          </div>
+          <div class="col-sm-2 col-md-3"></div>
       </div>
