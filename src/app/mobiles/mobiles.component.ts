@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import{ DataService}from '../data.service'
 import { Product } from '../models/product.model';
+import {FormsModule} from '@angular/forms'
 @Component({
   selector: 'app-mobiles',
   templateUrl: './mobiles.component.html',
@@ -11,7 +12,7 @@ export class MobilesComponent implements OnInit{
   mobiles:Product[]=[];
 //inject obj of DataService class
   constructor(private dsObj:DataService){}
-  
+  searchTerm:string;
   ngOnInit(){
     this.dsObj.getMobilesData().subscribe(
       data=>{

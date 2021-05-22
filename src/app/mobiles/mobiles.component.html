@@ -1,3 +1,5 @@
+<input type="text" name="productTitle" placeholder="Serach by Brand" class="form-control mt-3" [(ngModel)]="searchTerm">
+
 <div class="text-start">
 
     <h5 class="text-dark mt-4 bg-warning p-1"> <i class="fas fa-shopping-cart"></i> ({{productCount}})</h5>
@@ -7,7 +9,7 @@
 </div> 
 
 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3 mb-5 mr-3 ml-3 p-5">
-    <div class="col" *ngFor="let prObj of mobiles">
+    <div class="col" *ngFor="let prObj of mobiles | search : searchTerm">
         <app-products-details [productObj]=prObj (myEvent)="getProductDetailsFromChild($event)"></app-products-details>
     </div>
 

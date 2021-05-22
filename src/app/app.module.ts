@@ -17,6 +17,7 @@ import { TelevisionsComponent } from './televisions/televisions.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { UsersComponent } from './users/users.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
     PagenotfoundComponent,
     UsersComponent,
     UserdetailsComponent,
+    SearchPipe,
     
   ],
   imports: [
