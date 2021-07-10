@@ -12,6 +12,7 @@ import { ProductComponent } from './product/product.component';
 import { RegisterComponent } from './register/register.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
 import { TestComponent } from './test/test.component';
+import { PlayerComponent } from "./pages/player/player.component";
 
 const routes: Routes = [
   {
@@ -65,6 +66,7 @@ const routes: Routes = [
     redirectTo:'/home',
     pathMatch:'full'
   },
+  { path: "Player", component: PlayerComponent },
   {
     path:'**',
     component:PagenotfoundComponent

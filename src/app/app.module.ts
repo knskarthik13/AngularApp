@@ -17,6 +17,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TestComponent } from './test/test.component';
 import { FakeuserlistComponent } from './fakeuserlist/fakeuserlist.component';
 import { FakeidlistComponent } from './fakeidlist/fakeidlist.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PlayerComponent } from './pages/player/player.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -35,11 +38,14 @@ import { FakeidlistComponent } from './fakeidlist/fakeidlist.component';
     TestComponent,
     FakeuserlistComponent,
     FakeidlistComponent,
+    PlayerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
