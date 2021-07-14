@@ -3,14 +3,19 @@ import { AudioService } from "../../services/audio.service";
 import { CloudService } from "../../services/cloud.service";
 import { StreamState } from "../../interfaces/stream-state";
 
+
 @Component({
   selector: 'app-player',
   templateUrl:'./player.component.html',
   styleUrls: ['./player.component.css']
 })
+
+
 export class PlayerComponent {
   files: Array<any> = [];
   state: StreamState;
+  playStatus=false;
+
   currentFile: any = {};
   constructor(
     public audioService: AudioService,
@@ -24,6 +29,7 @@ export class PlayerComponent {
     // listen to stream state
     this.audioService.getState().subscribe(state => {
       this.state = state;
+      
     });
   }
   playStream(url) {
@@ -31,11 +37,11 @@ export class PlayerComponent {
       // listening for fun here
     });
   }
-
   openFile(file, index) {
     this.currentFile = { index, file };
     this.audioService.stop();
     this.playStream(file.url);
+    this.playStatus=true;
   }
 
   pause() {
@@ -61,7 +67,12 @@ export class PlayerComponent {
     const file = this.files[index];
     this.openFile(file, index);
   }
-
+  nextSong(){
+    if (this.state?.readableCurrentTime === this.state?.readableDuration)
+    {
+      this.next()
+    }
+  }
   isFirstPlaying() {
     return this.currentFile.index === 0;
   }
@@ -71,5 +82,10 @@ export class PlayerComponent {
   }
   onSliderChangeEnd(change) {
     this.audioService.seekTo(change.value);
+    this.nextSong();
   }
 }
+
+
+
+

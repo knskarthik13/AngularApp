@@ -21,6 +21,15 @@ export class AudioService {
     "loadedmetadata",
     "loadstart"
   ];
+  private state: StreamState = {
+    playing: false,
+    readableCurrentTime: '',
+    readableDuration: '',
+    duration: undefined,
+    currentTime: undefined,
+    canplay: false,
+    error: false,
+  };
 
   
 
@@ -32,6 +41,7 @@ export class AudioService {
       this.audioObj.play();
 
       const handler = (event: Event) => {
+        this.updateStateEvents(event);
         observer.next(event);
       };
 
@@ -42,18 +52,11 @@ export class AudioService {
         this.audioObj.currentTime = 0;
         // remove event listeners
         this.removeEvents(this.audioObj, this.audioEvents, handler);
+        // reset state
+      this.resetState();
       };
     });
   }
-  playStream(url) {
-    return this.streamObservable(url).pipe(takeUntil(this.stop$));
-  }
-  getState(): Observable<StreamState> {
-    return this.stateChange.asObservable();
-  }
-
-  
-
   private addEvents(obj, events, handler) {
     events.forEach(event => {
       obj.addEventListener(event, handler);
@@ -65,13 +68,18 @@ export class AudioService {
       obj.removeEventListener(event, handler);
     });
   }
+  playStream(url) {
+    return this.streamObservable(url).pipe(takeUntil(this.stop$));
+  }
 
   play() {
     this.audioObj.play();
+    
   }
 
   pause() {
     this.audioObj.pause();
+    
   }
 
   stop() {
@@ -82,26 +90,16 @@ export class AudioService {
     this.audioObj.currentTime = seconds;
   }
 
-  formatTime(time: number, format: string = "HH:mm:ss") {
+  formatTime(time: number, format: string = "mm:ss") {
     const momentTime = time * 1000;
     return moment.utc(momentTime).format(format);
   }
 
-  private state: StreamState = {
-    playing: false,
-    readableCurrentTime: '',
-    readableDuration: '',
-    duration: undefined,
-    currentTime: undefined,
-    canplay: false,
-    error: false,
-  };
-
   private stateChange: BehaviorSubject<StreamState> = new BehaviorSubject(
     this.state
   );
-
-  private updateStateEvents(event: Event): void {
+  
+  public updateStateEvents(event: Event): void {
     switch (event.type) {
       case "canplay":
         this.state.duration = this.audioObj.duration;
@@ -138,5 +136,10 @@ export class AudioService {
       canplay: false,
       error: false
     };
+  }
 
-  }}
+    getState(): Observable<StreamState> {
+      return this.stateChange.asObservable();
+    }
+
+  }

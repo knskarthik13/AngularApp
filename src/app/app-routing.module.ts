@@ -61,12 +61,13 @@ const routes: Routes = [
       pathMatch:'full'
     }]
   },
+  { path:'player', component: PlayerComponent },
   {
     path:'',
     redirectTo:'/home',
     pathMatch:'full'
   },
-  { path: "Player", component: PlayerComponent },
+  
   {
     path:'**',
     component:PagenotfoundComponent
