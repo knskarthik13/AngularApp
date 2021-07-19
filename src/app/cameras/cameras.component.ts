@@ -12,6 +12,7 @@ export class CamerasComponent implements OnInit {
 
   cameras:Product[]=[]
   constructor(private dsObj:CameradataService){}
+  searchTerm:string;
   
   ngOnInit(){
     this.dsObj.getCamerasData().subscribe(

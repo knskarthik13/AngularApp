@@ -1,6 +1,7 @@
 .card{
-    width: 18rem;
+    width: 19rem;
 }
+
 button:active{
     box-shadow: none;
 }

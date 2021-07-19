@@ -15,22 +15,22 @@ export class DataService {
 
     getMobilesData():Observable<Product[]>{
         //http get
-       return this.hc.get<Product[]>("http://localhost:3000/mobiles")
+       return this.hc.get<Product[]>("http://localhost:3000/healthcare")
     }
     //to save /create new mobile
     createNewMobile(mobileObj):Observable<any>{
-      return this.hc.post("http://localhost:3000/mobiles",mobileObj)
+      return this.hc.post("http://localhost:3000/healthcare",mobileObj)
     }
 
     //update mobile
     updateMobile(modifiedMobileOj):Observable<any>{
-      return this.hc.put("http://localhost:3000/mobiles/"+modifiedMobileOj.id,modifiedMobileOj)
+      return this.hc.put("http://localhost:3000/healthcare/"+modifiedMobileOj.id,modifiedMobileOj)
     }
 
     //delete mobile
     deleteMobile(id):Observable<any>{
       console.log("id is ",id)
-      return this.hc.delete("http://localhost:3000/mobiles/"+id)
+      return this.hc.delete("http://localhost:3000/healthcare/"+id)
     }
     //tocheck login status
     userLoginStatus():boolean{

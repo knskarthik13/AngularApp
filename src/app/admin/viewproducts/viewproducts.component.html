@@ -1,14 +1,17 @@
-<div class="table-content">
+
+<div class="table-content container ">
+    <h5>HealthCare</h5>
+    <h6>Total number of products - {{countmobiles}}</h6>
     <form #ref="ngForm" (ngSubmit)="saveMobile(ref.value)">
-        <table class="table text-center text-dark">
+        <table class="table text-center text-danger table-striped">
             <thead>
-                <th>Brand</th>
+                <th>Title</th>
                 <th>Description</th>
+                <th>Price</th>
                 <th>Image</th>
             </thead>
             <tbody>
-                <tr *ngFor="let mobile of mobiles;let ind=index">
-
+                <tr class="table-danger table-striped"*ngFor="let mobile of mobiles;let ind=index">
                     <!-- product title -->
                     <td>
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
@@ -30,6 +33,14 @@
 
                     </td>
                     <td>
+                        <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
+                            {{mobile.price}}
+                        </span>
+
+                        <input type="text" name="price"  [(ngModel)]="editMobileObj.price"
+                            *ngIf="editMobileStatus && editMobileIndex==ind">
+                    </td>
+                    <td>
                         <img src={{mobile.productImage}} alt="" width="100px">
                     </td>
                     <!-- edit  and delete -->
@@ -37,11 +48,140 @@
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
                             <button class="btn btn-danger btn-sm p-1 m-1" (click)="editMobile(mobile,ind)" type="button"><i
                                     class="fas fa-edit text-warning"></i></button>
-                            <button class="btn btn-warning btn-sm p-1 m-1"><i
+                            <!-- <button class="btn btn-warning btn-sm p-1 m-1"><i
                                     class="fas fa-trash-alt text-danger" (click)="deleteMobile(mobile)" type="button"></i></button>
-                        </span>
+                        </span> -->
+                    </span>
 
                         <span *ngIf="editMobileStatus && editMobileIndex==ind">
+                            <button class="btn btn-sm btn-success" type="submit"><i
+                                    class="fas fa-save text-white"></i></button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <!-- medicine -->
+    <br>
+    <h5>Medicines</h5>
+    <h6>Total number of products - {{countmedicine}}</h6>
+    <form #ref="ngForm" (ngSubmit)="saveMedicine(ref.value)">
+        <table class="table text-center text-danger table-striped">
+            <thead>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Image</th>
+            </thead>
+            <tbody>
+                <tr class="table-danger table-striped" *ngFor="let medicine of medicine;let ind=index">
+                    <!-- product title -->
+                    <td>
+                        <span *ngIf="!editMedicineStatus || editMedicineIndex!==ind">
+                            {{medicine.productTitle | uppercase}}
+                        </span>
+
+                        <input type="text" name="productTitle"  [(ngModel)]="editMedicineObj.productTitle"
+                            *ngIf="editMedicineStatus && editMedicineIndex==ind">
+
+                    </td>
+                    <!-- product description -->
+                    <td>
+                        <span *ngIf="!editMedicineStatus || editMedicineIndex!==ind">
+                            {{medicine.description}}
+                        </span>
+
+                        <input type="text" name="description"  [(ngModel)]="editMedicineObj.description"
+                            *ngIf="editMedicineStatus && editMedicineIndex==ind">
+
+                    </td>
+                    <td>
+                        <span *ngIf="!editMedicineStatus || editMedicineIndex!==ind">
+                            {{medicine.price}}
+                        </span>
+
+                        <input type="text" name="price"  [(ngModel)]="editMedicineObj.price"
+                            *ngIf="editMedicineStatus && editMedicineIndex==ind">
+                    </td>
+                    <td>
+                        <img src={{medicine.productImage}} alt="" width="100px">
+                    </td>
+                    <!-- edit  and delete -->
+                    <td>
+                        <span *ngIf="!editMedicineStatus || editMedicineIndex!==ind">
+                            <button class="btn btn-danger btn-sm p-1 m-1" (click)="editMedicine(mobile,ind)" type="button"><i
+                                    class="fas fa-edit text-warning"></i></button>
+                            <!-- <button class="btn btn-warning btn-sm p-1 m-1"><i
+                                    class="fas fa-trash-alt text-danger" (click)="deleteMobile(mobile)" type="button"></i></button>
+                        </span> -->
+                    </span>
+
+                        <span *ngIf="editMedicineStatus && editMedicineIndex==ind">
+                            <button class="btn btn-sm btn-success" type="submit"><i
+                                    class="fas fa-save text-white"></i></button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <br>
+    <!-- babycare -->
+    <h5>Babycare</h5>
+    <h6>Total number of products - {{countbabycare}}</h6>
+    <form #ref="ngForm" (ngSubmit)="saveBabycare(ref.value)">
+        <table class="table text-center text-danger table-striped">
+            <thead>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Image</th>
+            </thead>
+            <tbody>
+                <tr class="table-danger table-striped" *ngFor="let medicine of babycare;let ind=index">
+                    <!-- product title -->
+                    <td>
+                        <span *ngIf="!editBabycareStatus || editBabycareIndex!==ind">
+                            {{medicine.productTitle | uppercase}}
+                        </span>
+
+                        <input type="text" name="productTitle"  [(ngModel)]="editBabycareObj.productTitle"
+                            *ngIf="editBabycareStatus && editBabycareIndex==ind">
+
+                    </td>
+                    <!-- product description -->
+                    <td>
+                        <span *ngIf="!editBabycareStatus || editBabycareIndex!==ind">
+                            {{medicine.description}}
+                        </span>
+
+                        <input type="text" name="description"  [(ngModel)]="editBabycareObj.description"
+                            *ngIf="editBabycareStatus && editBabycareIndex==ind">
+
+                    </td>
+                    <td>
+                        <span *ngIf="!editBabycareStatus || editBabycareIndex!==ind">
+                            {{medicine.price}}
+                        </span>
+
+                        <input type="text" name="price"  [(ngModel)]="editBabycareObj.price"
+                            *ngIf="editBabycareStatus && editBabycareIndex==ind">
+                    </td>
+                    <td>
+                        <img src={{medicine.productImage}} alt="" width="100px">
+                    </td>
+                    <!-- edit  and delete -->
+                    <td>
+                        <span *ngIf="!editBabycareStatus || editBabycareIndex!==ind">
+                            <button class="btn btn-danger btn-sm p-1 m-1" (click)="editBabycare(medicine,ind)" type="button"><i
+                                    class="fas fa-edit text-warning"></i></button>
+                            <!-- <button class="btn btn-warning btn-sm p-1 m-1"><i
+                                    class="fas fa-trash-alt text-danger" (click)="deleteMobile(mobile)" type="button"></i></button>
+                        </span> -->
+                    </span>
+
+                        <span *ngIf="editBabycareStatus && editBabycareIndex==ind">
                             <button class="btn btn-sm btn-success" type="submit"><i
                                     class="fas fa-save text-white"></i></button>
                         </span>

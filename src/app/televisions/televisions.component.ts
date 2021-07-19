@@ -10,8 +10,10 @@ import { TelevisiondataService } from '../televisiondata.service';
 export class TelevisionsComponent implements OnInit {
   televisions:Product[]=[]
   constructor(private dsObj:TelevisiondataService){}
+  searchTerm:string;
   
   ngOnInit(){
+    
     this.dsObj.getTelevisionsData().subscribe(
       data=>{
         this.televisions=data;

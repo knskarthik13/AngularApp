@@ -6,12 +6,12 @@ import { MobilesComponent } from './mobiles/mobiles.component';
 })
 export class SearchPipe implements PipeTransform {
 
-  transform(mobiles: any[],searchTerm:string):any[]{
-    if (!mobiles ||!searchTerm){
-      return mobiles;
+  transform(items: any[],searchTerm:string):any[]{
+    if (!items ||!searchTerm){
+      return items;
     }
     else{
-      return mobiles.filter(mobileObj=>mobileObj.productTitle.toLowerCase().indexOf(searchTerm.toLocaleLowerCase())!==-1)
+      return items.filter(itemObj=>itemObj.productTitle.toLowerCase().indexOf(searchTerm.toLocaleLowerCase())!==-1)
     }
   }
 

@@ -1,6 +1,13 @@
+.navbar{
+    background-color: rgb(14, 197, 197);
+    border-radius: 10px;
+    box-shadow: rgb(5, 2, 3);
+    
+}
 .active{
     font-weight: bold;
-    background-color: gray;
+    font-weight: 50px;
+    background-color: rgb(228, 156, 204);
     border-radius: 5px;
     box-shadow: 2px 2px black;
 }
